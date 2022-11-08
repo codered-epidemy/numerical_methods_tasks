@@ -13,8 +13,6 @@ def func_x(x=2):
     return math.e**(0.15/x)
 
 
-
-
 def func_first_derivative(x=1):
     return 1 / x + 0.15 / x ** 2
 
@@ -24,13 +22,13 @@ def func_second_derivative(x=1):
 
 
 # find segment where the root is
-def find_segment():
-    b = 10
-    a = 9
-    while func(a) * func(b) >= 0:
-        b = a
-        a -= 1
-    return a, b
+# def find_segment():
+#     b = 10
+#     a = 9
+#     while func(a) * func(b) >= 0:
+#         b = a
+#         a -= 1
+#     return a, b
 
 
 def method_of_half_division(epsilon, segment):
@@ -115,9 +113,9 @@ def method_simple_iteration(epsilon):
 
 
 def main():
-    segment = find_segment()
-    print(segment[0], func(segment[0]))
-    print(segment[1], func(segment[1]))
+    # segment = find_segment()
+    # print(segment[0], func(segment[0]))
+    # print(segment[1], func(segment[1]))
 
     print("Метод половинного деления отрезка")
     x_half_division, n_half_division = method_of_half_division(epsilon, segment)
