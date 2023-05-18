@@ -116,4 +116,4 @@ if __name__ == '__main__':
     draw(x_list_7, y_list_7, x_list_8, y_list_8, x_list_9, y_list_9, 'Метод Адамса трехшаговый явный')
 
     draw_solution(x_list_7)
-    # print(f'{n1}: {y7}', f'{n2}: {y8}', f'{n3}: {y9}', sep='\n')
+
